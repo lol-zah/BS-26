@@ -1,5 +1,6 @@
 #!/bin/bash
-python3 -m venv venv
-source venv/bin/activate
+mkdir -p ~/.local/bin/
+PATH="$PATH:~/.local/bin/"
+python3 get-pip.py --break-system-packages
 pip install -r requirements.txt --break-system-packages
 python3 start.py
