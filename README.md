@@ -1,25 +1,16 @@
-VBC Brawl V26 (maksimka hitler)
+##Форк VBC Brawl V26 (by maksimka hitler)##
 
-ANDROID APK - YOUR USING
+Apk файл можно использовать от <a href="https://github.com/PhoenixFire6934/Classic-Brawl" rel="nofollow">Classic Brawl</a>.
+<a href="https://mega.nz/file/zDQzDYyB#V7GkrTFQpTfhTk_gOroMfdps5VFl8Lnn-CBX-bbnjlw" rel="nofollow">Сам apk файл</a>.
 
-Server ZIP: https://codeload.github.com/LekmaDev/BS-26/zip/refs/heads/main
+## Что нужно для запуска: ##
+1. python
 
-## Requirements: ##
-1. a brain...
-
-## Work: ##
-1. Friend (add, status, remove)
-2. Club
-3. Shop
-4. Online Rooms
-5. bot interacting with the server
-6. Online Battle (коляски)
-
-and more
-
-## How to play BS V26: ##
-1. download server
-2. download pydroid (if you want to run from the phone)
-3. open in pydroid core.py located in the server folder
-4. click on the run button
-5. now open the game and play
+## Работают: ##
+1. Друзья (добавление, статус, удаление);
+2. Клубы;
+3. Магазин;
+4. Лобби;
+5. Активность ботов на сервере;
+6. Онлайн матчи (коляски (я не знаю что хотел этим сказать автор)).
+и т.д.
