@@ -3,6 +3,8 @@
 Apk файл можно использовать от <a href="https://github.com/PhoenixFire6934/Classic-Brawl" rel="nofollow">Classic Brawl</a>.
 <a href="https://mega.nz/file/zDQzDYyB#V7GkrTFQpTfhTk_gOroMfdps5VFl8Lnn-CBX-bbnjlw" rel="nofollow">Сам apk файл</a>.
 
+Не ругайтесь, мне было лень разбираться и я попросил нейронку это всё подредачить.. :)
+
 ## Что нужно для запуска: ##
 1. python
 2. Установленные зависимости с requirements.txt
