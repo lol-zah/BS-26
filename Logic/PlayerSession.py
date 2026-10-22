@@ -18,14 +18,21 @@ class PlayerSession(Thread):
     
     def startBattle(self):
         self.started = 1
-        StartLoadingMessage(self.client, self.player, self.my_battle).send()
-        UDPConnectionInfo(self.client, self.player).send()
+        try:
+            StartLoadingMessage(self.client, self.player, self.my_battle).send()
+            UDPConnectionInfo(self.client, self.player).send()
+        except OSError:
+            self.started = 0
+            return
         while self.started:
             self.my_battle["battleTick"] += 1
             if self.my_battle["battleTick"] > 2530:
                 self.started = 0
             self.process()
-            time.sleep(0.15) 
+            time.sleep(0.15)
 
     def process(self):
-        VisionUpdate(self.client, self.player, self.my_battle).send()
+        try:
+            VisionUpdate(self.client, self.player, self.my_battle).send()
+        except OSError:
+            self.started = 0

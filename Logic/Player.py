@@ -38,6 +38,7 @@ class Players:
 	dudu = 0
 	bulletX = 1
 	bulletY = 1
+	battleID = 0
 	hasbollX = 3150
 	hasbollY = 4950
 	angle = 0

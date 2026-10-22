@@ -80,17 +80,17 @@ class LogicBuy(Writer):
             DataBase.replaceValue(self, 'UnlockedSkins', self.player.UnlockedSkins)
         if self.id2 == 1:
             self.writeVint(self.mult2) # Reward ammount
-            self.writeScId(0, 8) # RewardID
-            self.writeHexa('''00 00 00''')  # Reward end
-            self.player.gems += self.mult2
-            DataBase.replaceValue(self, 'gems', self.player.gems)
-        elif self.id2 == 2: # Gems
-            self.writeVint(self.mult2) # Reward ammount
             self.writeScId(0, 7) # RewardID
             self.writeHexa('''00 00 00''')  # Reward end
-
             self.player.gold += self.mult2
             DataBase.replaceValue(self, 'gold', self.player.gold)
+        elif self.id2 == 2: # Gems
+            self.writeVint(self.mult2) # Reward ammount
+            self.writeScId(0, 8) # RewardID
+            self.writeHexa('''00 00 00''')  # Reward end
+
+            self.player.gems += self.mult2
+            DataBase.replaceValue(self, 'gems', self.player.gems)
         elif self.id2 == 5: # Brawler
             self.writeVint(self.mult2)  # Reward amount
             self.writeScId(16, self.brawler2)  # CsvID

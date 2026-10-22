@@ -9,7 +9,7 @@ class UDPConnectionInfo(Writer):
 
 
     def encode(self):
-        self.writeVint(2556) # Server Port
+        self.writeVint(9339) # Server Port
         self.writeString() # Server IP
         self.writeInt(0)
         self.writeByte(0)

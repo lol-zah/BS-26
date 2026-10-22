@@ -27,11 +27,19 @@ class Server:
 		self.ip = ip
 	def start(self):
 		self.server.bind((self.ip, self.port))
-		print(f'Server | Lobby started! {self.ip}:{self.port}\nServer | Battle started! {self.ip}:6969')
+		print(f'Server | Lobby started! {self.ip}:{self.port}\nServer | Battle started! {self.ip}:9339')
 		plrsinfo = "database/Player/plr.db"
 		if os.path.exists(plrsinfo):
 			conn = sqlite3.connect("database/Player/plr.db")
 			c = conn.cursor()
+			c.execute(
+				"CREATE TABLE IF NOT EXISTS plrs ("
+				"token TEXT, lowID INT, name TEXT, trophies INT, gold INT, gems INT, "
+				"starpoints INT, tickets INT, Troproad INT, profile_icon INT, name_color INT,"
+				"clubID INT, clubRole INT, brawlerData JSON, brawlerID INT, skinID INT, roomID INT, "
+				"box INT, bigbox INT, online INT, vip INT, playerExp INT, friends JSON, SCC TEXT,"
+				"trioWINS INT, sdWINS INT, theme INT)"
+			)
 			c.execute("UPDATE plrs SET roomID=0")
 			c.execute("UPDATE plrs SET online=0")
 			c.execute("SELECT * FROM plrs")
@@ -45,10 +53,8 @@ class Server:
 			else:
 				addr[address[0]] = 0
 			if address[0] in block:
-				os.system(f"iptables -A INPUT -s {address[0]} -j DROP")
 				client.close()
 			elif addr[address[0]] >= 4:
-				os.system(f"iptables -A INPUT -s {address[0]} -j DROP")
 				block.append(address[0])
 				config = open('config.json', 'r')
 				content = config.read()
