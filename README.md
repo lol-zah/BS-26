@@ -1,4 +1,5 @@
 ## Форк VBC Brawl V26 (by maksimka hitler) ##
+Приватный python сервер по игре Brawl Stars.
 
 Apk файл можно использовать от <a href="https://github.com/PhoenixFire6934/Classic-Brawl" rel="nofollow">Classic Brawl</a>.
 <a href="https://mega.nz/file/zDQzDYyB#V7GkrTFQpTfhTk_gOroMfdps5VFl8Lnn-CBX-bbnjlw" rel="nofollow">Сам apk файл</a>.
