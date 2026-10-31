@@ -84,6 +84,14 @@
 3) [Cost](#cost)
 4) [OldCost](#oldcost)
 5) [Multiplier](#multiplier)
+6) [BrawlerID](#brawlerid)
+7) [SkinID](#skinid)
+8) [WhoBuyed](#whobuyed)
+9) [Timer](#timer)
+10) [OfferBGR](#offerbgr)
+11) [ShopType](#shoptype)
+12) [ShopDisplay](#shopdisplay)
+13) [StartTime](#starttime)
 
 #### ID
 ID - числовое значение, которое обозначает тип акции.
@@ -121,6 +129,39 @@ OldCost - старая цена (типо Cost - новая цена "со ск�
 #### Multiplier
 Multiplier - сколько получишь награды в акции.
 
+#### BrawlerID
+BrawlerID - ID бравлела, которого можно получить при 3 ID акции.
+
+#### SkinID
+SkinID - ID скина, при 4 ID акции.
+
+#### WhoBuyed
+WhoBuyed - кто купил акцию по ID людей.
+
+#### Timer
+Timer - время работы акции в секундах, после того, как время пройдёт - акции не будет видно в магазине.
+"Timer": 60
+
+#### OfferBGR
+OfferBGR - фон акции, в примере на акции будет зелёный фон с иконками гемов.
+"OfferBGR": "offer_gems"
+
+#### ShopType
+ShopType - тип валюты для оплаты:
+0 - гемы;
+1 - монеты;
+2 - какой-то смотреть.. не покупается..
+ "ShopType": 0
+
+#### ShopDisplay
+ShopDisplay - тип акции
+0 - стандартная акция;
+1 - Акция дня.
+"ShopDisplay": 0
+
+#### StartTime
+StartTime - время начала акции.
+"StartTime": 0
 
 3. ## Карты
 
