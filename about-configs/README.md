@@ -112,56 +112,56 @@ ID - числовое значение, которое обозначает ти
 13 - игра вылетает;\
 14 - большой ящик;\
 15 - игра вылетает;\
-16 - гемы.\
+16 - гемы.
 
 #### OfferTitle
 OfferTitle - название акции.\
-"OfferTitle": "TEST"/
+"OfferTitle": "TEST"
 
 #### Cost
 Cost - цена (возможно только в гемах, я ещё не разобрался)./
-"Cost": 10/
+"Cost": 10
 
 #### OldCost
 OldCost - старая цена (типо Cost - новая цена "со скидкой")./
-"OldCost": 100/
+"OldCost": 100
 
 #### Multiplier
-Multiplier - сколько получишь награды в акции./
+Multiplier - сколько получишь награды в акции.
 
 #### BrawlerID
-BrawlerID - ID бравлела, которого можно получить при 3 ID акции./
+BrawlerID - ID бравлела, которого можно получить при 3 ID акции.
 
 #### SkinID
-SkinID - ID скина, при 4 ID акции./
+SkinID - ID скина, при 4 ID акции.
 
 #### WhoBuyed
-WhoBuyed - кто купил акцию по ID людей./
+WhoBuyed - кто купил акцию по ID людей.
 
 #### Timer
 Timer - время работы акции в секундах, после того, как время пройдёт - акции не будет видно в магазине./
-"Timer": 60/
+"Timer": 60
 
 #### OfferBGR
 OfferBGR - фон акции, в примере на акции будет зелёный фон с иконками гемов./
-"OfferBGR": "offer_gems"/
+"OfferBGR": "offer_gems"
 
 #### ShopType
 ShopType - тип валюты для оплаты:/
 0 - гемы;/
 1 - монеты;/
 2 - какой-то смотреть.. не покупается../
-"ShopType": 0/
+"ShopType": 0
 
 #### ShopDisplay
 ShopDisplay - тип акции./
 0 - стандартная акция;/
 1 - Акция дня./
-"ShopDisplay": 0/
+"ShopDisplay": 0
 
 #### StartTime
 StartTime - время начала акции./
-"StartTime": 0/
+"StartTime": 0
 
 3. ## Карты
 
